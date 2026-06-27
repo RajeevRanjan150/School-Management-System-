@@ -884,7 +884,7 @@ class Helper {
     System.out.print("Enter new Roll number: ");
     int newRoll = sc.nextInt();
     sc.nextLine();
-    if(!students.get(standard).containsKey(newRoll)) {
+    if(students.get(standard).containsKey(newRoll)) {
       System.out.println("Student already exists with Roll " + newRoll);
       return;
     }
