@@ -45,10 +45,11 @@ class Student {
     }
     int subjects = markSheet.size();
     double totalMark = 0;
+    double maxMark = subjects * 100;
     for (int mark : markSheet.values()) {
       totalMark += mark;
     }
-    this.percentage = (totalMark / subjects) * 100;
+    this.percentage = (totalMark * 100) / maxMark;
     return Math.round(percentage);
   }
 
